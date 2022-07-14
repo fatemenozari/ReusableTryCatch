@@ -7,12 +7,11 @@ namespace ReusableTryCatch
     {
         static void Main(string[] args)
         {
-            User user = new User();
-            HandlingUserActions.DoTry(() => user.AddUser("faezeh", 122));
-            HandlingUserActions.DoTry(() => user.AddUser("Fateme", 123));
+            HandlingUserActions.DoTry(() => UserRepository.AddUser(" Stafen ", 0));
+            HandlingUserActions.DoTry(() => UserRepository.AddUser(" Elena ", 122));
 
-            foreach (var User in user.UserList)
-              Console.WriteLine($"Username : {User.UserName} PassWord : {User.Password}");
+            foreach (var User in UserRepository.UserList)
+              Console.WriteLine($" Username : {User.UserName}  PassWord : {User.Password}");
 
             Console.ReadKey();
         }

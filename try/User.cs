@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace ReusableTryCatch
 {
@@ -6,19 +7,5 @@ namespace ReusableTryCatch
     {
         public string UserName;
         public int Password;
-        public List<User> UserList = new List<User>();
-
-        public void AddUser(string userName, int password)
-        {
-            User user = new User
-            {
-                UserName = userName,
-                Password = password
-            };
-
-            UserList.Add(user);
-        }
-
-
     }
 }
