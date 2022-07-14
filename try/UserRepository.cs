@@ -14,7 +14,7 @@ namespace ReusableTryCatch
         {
             User user = new User
             {
-                UserName = userName,
+                UserName = userName, 
                 Password = password 
             };
 
