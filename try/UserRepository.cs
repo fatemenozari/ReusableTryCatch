@@ -16,7 +16,7 @@ namespace ReusableTryCatch
             {
 
                 UserName = userName,
-                Password = password
+                Password = password 
             };
 
             if (userName == null || userName == " " || password <= 0)
