@@ -20,7 +20,6 @@ namespace ReusableTryCatch
 
             if (userName == null || userName == " " || password <= 0)
                 throw new ArgumentException(" userName or password is null  ");
-
             else
                 UserList.Add(user);
         }

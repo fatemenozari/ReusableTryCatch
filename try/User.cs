@@ -5,7 +5,7 @@ namespace ReusableTryCatch
 {
     internal class User
     {
-        public string UserName;
-        public int Password;
+        public string UserName { get; set;}
+        public int Password { get; set;}
     }
 }

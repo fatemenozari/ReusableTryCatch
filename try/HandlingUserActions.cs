@@ -6,19 +6,18 @@ using System.Threading.Tasks;
 
 namespace ReusableTryCatch
 {
-    internal class HandlingUserActions
+    public class HandlingUserActions
     {
         public static void DoTry(Action userAction)
-            {
-                try
-                {
+         {
+            try
+             {
                     userAction();
-                }
-                catch (Exception ex)
-                {
+             }
+            catch (Exception ex)
+             {
                     Console.WriteLine(ex.Message);
-                }
-            }
-        }
-    
+             }
+         }
+     }
 }
